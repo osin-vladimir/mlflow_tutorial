@@ -1,0 +1,9 @@
+name: mlflow-tutorial
+dependencies:
+  - python=3.7
+  - numpy
+  - pandas
+  - jupyter 
+  - scikit-learn
+  - pip:
+    - mlflow 
