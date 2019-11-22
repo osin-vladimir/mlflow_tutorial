@@ -33,7 +33,7 @@ jupyter notebook
     - mlflow server   : http://localhost:5000/
     - jupyter notebook: http://localhost:8888/ 
 
-7. Congrats! You ready good to go! 
+7. Congrats! You are ready good to go! 
 
 
 ### 
