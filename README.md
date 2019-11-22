@@ -19,9 +19,25 @@ conda activate mlflow-tutorial
 
 4. Launch mlflow web-server (in the first terminal) from your project folder :
 
-```
-mlflow ui
-```
+    ```
+    mlflow ui
+    ```
+
+Note: for mlflow production-ready tracking server you need to create sqlite database which will be used as backend-store:
+    
+    - Start python in your shell and create sqlite database inside your project directory: 
+
+    ```
+    import sqlite3
+    connection = sqlite3.connect('mlflow_data.db')
+    connection.close()
+    ```
+
+    - Start server 
+
+    ```
+    mlflow server  --backend-store-uri="sqlite:///C:\\mlflow_data.db"  --default-artifact-root="file:///C:\\artifact_store\\"
+    ```
 
 5. Launch jupyter notebook (in the second terminal) from your project folder :
 
