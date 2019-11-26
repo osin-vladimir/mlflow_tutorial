@@ -27,12 +27,13 @@
     mlflow server --backend-store-uri="sqlite:///C:\\path\\to\\project_folder\\backend\\mlflow_data.db" 
                   --default-artifact-root="file:///C:\\path\\to\\project_folder\\artifact_store\\"
     ```
-
+    - **Optional**: you can launch MLflow server also from terminal inside Jupyter Lab interface. 
+    
 5. Make sure that you can access mlflow server and jupyter notebook from your browser :
     - mlflow server   : http://localhost:5000/
     - jupyter notebook: http://localhost:8888/ 
 
 **Note**: There could be some minor changes in the dependencies and files, thus make sure to double-check prior to the event.
-**Note**: Tutorial functionality tested on Windows 10.
+**Note**: Tutorial functionality was tested on Windows 10.
     
 ### Congrats! You are ready good to go! 
