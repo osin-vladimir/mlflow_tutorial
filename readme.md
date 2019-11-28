@@ -9,9 +9,12 @@
 
 2. Open Anaconda Prompt (Miniconda 3) navigate **to the tutorial folder** and install requirements: 
     
-    - **Optional**: you can create separate conda environment for this tutorial and install dependecies there: 
+    - **Optional**: you can create separate conda environment for this tutorial from environment file: 
         ```
-        conda env create -n mlflow-tutorial python=3.7
+        conda env create -f conda.yaml
+        ```
+        ```
+        conda activate mlflow-tutorial
         ```
     - Installing requirements from requirements.txt file:
         ```
@@ -27,7 +30,11 @@
     mlflow server --backend-store-uri="sqlite:///C:\\path\\to\\project_folder\\backend\\mlflow_data.db" 
                   --default-artifact-root="file:///C:\\path\\to\\project_folder\\artifact_store\\"
     ```
-    - **Optional**: you can launch MLflow server also from terminal inside Jupyter Lab interface. 
+    - Parameters:
+        - backend-store-uri - URI to which to persist experiment and run data (sqlite database in our case).
+        - default-artifact-root - Local or S3 URI to store artifacts, for new experiments (local folder in our case). 
+    
+    - **Hint**: you can launch MLflow server also from terminal inside Jupyter Lab interface. 
     
 5. Make sure that you can access mlflow server and jupyter notebook from your browser :
     - mlflow server   : http://localhost:5000/
