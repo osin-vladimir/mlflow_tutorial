@@ -1,0 +1,14 @@
+name: multistep_example
+
+conda_env: conda.yaml
+
+# docker_env:
+#  image:  python
+
+entry_points:
+    main:
+        parameters:
+          param_one: {type: int, default: 10}
+          param_two: {type: int, default: 20}
+          param_three: {type: int, default: 100000}
+        command: "python3 main.py"

@@ -1,0 +1,10 @@
+name: tutorial_part_4
+channels:
+  - defaults
+dependencies:
+  - numpy=1.14.3
+  - pandas=0.22.0
+  - scikit-learn=0.19.1
+  - click
+  - pip:
+    - mlflow
